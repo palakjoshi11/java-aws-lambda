@@ -2,17 +2,17 @@
 
 #### What is AWS lambda?
 
-It's a serverless compute service, means we don't need to manage any server, as AWS will automatically run the code once it is triggred.
+It's a serverless compute service, which means we don't need to manage any server, as AWS will automatically run the code once it is triggred.
 
 Lambda can be triggered in any way, S3 file upload, API Http request, cloudwatch etc.
 
-#### What this service will do?
+#### What will this service do?
 
-This a a very basic lambda service, that will help you to exceute a lambda in local desktop.
+This is a very basic lambda service that will help you execute a lambda in local desktop.
 
-Here I'm sending a event from POSTMAN and then making a GET call through mongoClient to mongo collection.
+Here I'm sending an event from POSTMAN and then making a GET call through mongoClient to mongo collection.
 
-More integration will be added to this projects
+More integration will be added to this project
 
 #### What do you need for local testing
 
@@ -27,19 +27,19 @@ More integration will be added to this projects
 
 ##### MONGODB operation
 
-`db.persons.insertOne({ "name": "John", "lastName": "Doe", "city": "Los Angles", "state": "California", "phone": "15551234567", "identificationId": "A123456789" })`
+`db.persons.insertOne({ "name": "John", "lastName": "Doe", "city": "Los Angeles", "state": "California", "phone": "15551234567", "identificationId": "A123456789" })`
 
 
-#### How To start Lambda application
+#### How to start a Lambda application
 
-To start the application just go to the project path and run
+To start the application, just go to the project path and run
 `docker-compose up --build -d`
 
 This will start all the services in your docker.
 
-Once all the services are started , go to your postman and run the CURL command provided.
+Once all the services are started, go to your postman and run the CURL command provided.
 
-Once you send the event go check the logs and you can see the GET call getting executed!
+Once you send the event, go check the logs, and you can see the GET call getting executed!
 
 
-**NOTE:** This is a very basic setup, I know there needs to a better way of writing lambda with least amount memory loss and propery closer of application. But this is just a beginner frindly code, checkout different branches for different kind of implementation.
+**NOTE:** This is a very basic setup, this is just a beginner-friendly code, checkout different branches for different kinds of implementation.
